@@ -18,6 +18,7 @@ class _CalendarState extends State<Calendar> {
         centerTitle: true,
       ),
       body: TableCalendar(
+        locale: Localizations.localeOf(context).languageCode,
         focusedDay: focusedDay,
         firstDay: DateTime(2022),
         lastDay: DateTime(2030),
